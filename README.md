@@ -20,7 +20,7 @@ Deploy easily with:
 - **GitHub Pages:** Push to `main` branch, then enable Pages in repo settings.
 - **Netlify/Vercel:** Drag-and-drop the folder or connect repo.
 
-👉 live link :
+👉 live link:https://stacy-g-97.github.io/week-8/
 
 ## 👩‍💻 Author
 Created by Stacy Gathoni, 2025.
