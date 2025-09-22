@@ -1,0 +1,127 @@
+/* General Styles */
+:root {
+  --primary: #333;
+  --accent: #007BFF;
+  --light: #f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  padding: 1rem;
+}
+nav .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+nav li {
+  margin-left: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--accent);
+}
+#menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: url("https://picsum.photos/1200/600?random=1") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 20px 0;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Sections */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+section {
+  padding: 60px 20px;
+}
+.about, .contact {
+  background: var(--light);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+form button {
+  margin-top: 10px;
+}
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    width: 100%;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}
